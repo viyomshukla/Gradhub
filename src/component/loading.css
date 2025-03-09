@@ -71,9 +71,6 @@
   100% { opacity: 0; }
 }
 
-.ne {
-  position: absolute;
-}
 
 
 .ne-1 {
@@ -84,10 +81,9 @@
   border-radius: 40px 0 0 40px;
   left: 607.08px; 
   top: 591px; 
-  animation: fadeInOut2 1s ease-in-out forwards;
+  animation: moveLeft 1s linear forwards;
   opacity: 1;
 }
-
 
 .ne-2 {
   position: absolute;
@@ -97,21 +93,38 @@
   border-radius: 0 40px 40px 0;
   left: 660px; 
   top: 591px;  
-  animation: fadeInOut2 1s ease-in-out forwards;
+  animation: moveRight 1s linear forwards;
   opacity: 1;
 }
+
+@keyframes moveLeft {
+  0% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(-100vw); opacity: 0; } 
+}
+
+@keyframes moveRight {
+  0% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(100vw); opacity: 0; } 
+}
+
 .ne-3{
+  color: white; 
   position: absolute;
   width: 44px;
   height: 12px;
   top: 615px;
   left: 645px;
-  background-image: url('../source/GradHub\ \(1\).png');
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 100%;
   background-size: cover;
   background-position: center;
   opacity: 1;
   z-index: 1;
   animation: fadeInOut2 1s ease-in-out forwards;
+}
+.ne-3 span{
+  color: #00A8FF; 
 }
 @keyframes fadeInOut2 {
   0% { opacity: 0; }

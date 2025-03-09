@@ -58,7 +58,7 @@ const LandingPage = () => {
         <>
           <div className="ne ne-1"></div>
           <div className="ne ne-2"></div>
-          <div className="ne ne-3"></div>
+          <div className="ne ne-3"><span>Grad</span>Hub</div>
         </>
       )}
       {grad && <div className="grad"><span>Grad</span>Hub</div>}
