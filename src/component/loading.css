@@ -33,7 +33,7 @@
 }
 
 .ellipse.animate {
-  animation: moveEllipse 10s forwards;
+  animation: moveEllipse 8s forwards;
   opacity: 1;
 }
 
