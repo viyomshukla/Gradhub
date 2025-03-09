@@ -1,0 +1,74 @@
+.nav{
+    width: 1314px;
+    height: 70px;
+    left: -14px;
+}
+.nav .head{
+    background-image: url("../source2/Group\ 35578.png");
+    width: 134px;
+    height: 31px;
+    margin-top: 25px;
+    margin-left:88px
+}
+.head2{
+    background-image: url("../source2/Frame\ 14001.png");
+    width: 344px;
+    height: 36px;
+    position: absolute; 
+    top: 90px;
+    left: 461px;
+    gap: 10px; 
+    padding: 10px;
+}
+.head3{
+    background-image: url("../source2/Frame\ 14002.png");
+    width: 1089px;
+    height: 128px;
+    position: absolute;
+    top: 190px;
+    left: 93px;
+    gap: 21px;
+}
+.head4{
+    background-image: url("../source2/Frame\ 14003.png");
+    width: 301px;
+    height: 36px;
+    position: absolute;
+    top: 433px;
+    left: 481px;
+}
+.star{
+    background-image: url("../source2/smoothinnercorner_3.png");
+    width: 17.95px; 
+    height: 17.95px;
+    position: absolute;
+    top: 431.14px;
+    left: 779px;
+    transform: rotate(0.44deg); 
+}
+.google{
+    background-image: url("../source2/Group\ 35574.png");
+    width: 339px;
+    height: 285px;
+    top: 524px;
+    left: 93px;
+    position: absolute;
+    border: 1px;
+}
+.delo{
+    background-image: url("../source2/Group\ 35572.png");
+    width: 339px;
+    height: 285px;
+    position: absolute; 
+    top: 524px;
+    left: 469px;
+    border: 1px ; 
+}
+.way{
+    background-image: url("../source2/Group\ 35573.png");
+    width: 339px;
+    height: 285px;
+    position: absolute; 
+    top: 524px;
+    left: 845px;
+}

@@ -1,0 +1,144 @@
+.landing-page {
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo {
+  position: absolute;
+  width: 350px;
+  height: 317px;
+  top: 257px;
+  left: 465px;
+  border-radius: 30px;
+  background-image: url('../source/Frame\ 1\ \(1\).png'); 
+  background-size: cover;
+  background-position: center;
+}
+
+.ellipse {
+  position: absolute;
+  width: 28px;
+  height: 27px;
+  top: 379px;
+  left: 712px;
+  background-image: url('../source/Ellipse\ 1.png');
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 168, 255, 0.7);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.ellipse.animate {
+  animation: moveEllipse 10s forwards;
+  opacity: 1;
+}
+
+@keyframes moveEllipse {
+  0% { top: 379px; left: 712px; }
+  10% { top: 325px; left: 712px; }
+  20% { top: 325px; left: 712px; }
+  30% { top: 319px; left: 652px; }
+  40% { top: 287px; left: 652px; }
+  50% { top: 296px; left: 574px; }
+  60% { top: 340px; left: 522px; }
+  70% { top: 402px; left: 503px; }
+  80% { top: 480px; left: 528px; }
+  90% { top: 510px; left: 574px; }
+  100% { top: 520px; left: 627px; }
+}
+
+.new-image {
+  position: absolute;
+  width: 66px;
+  height: 62px;
+  top: 593px;
+  left: 607px;
+  background-image: url('../source/Ellipse\ 2.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  animation: fadeInOut 1s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+/* Remove default styles from .new-element to prevent interference */
+.new-element {
+  position: absolute;
+}
+
+/* Left-facing semicircle */
+/* Left-facing semicircle */
+/* Left-facing semicircle (smaller size) */
+.new-element-1 {
+  position: absolute;
+  width: 40px;  /* Reduced width */
+  height: 70px; /* Reduced height */
+  background-color: white;
+  border-radius: 40px 0 0 40px;
+  left: 607.08px; /* Adjust as needed */
+  top: 591px;  /* Adjust as needed */
+  animation: fadeInOut2 1s ease-in-out forwards;
+  opacity: 1;
+}
+
+/* Right-facing semicircle (smaller size with gap) */
+.new-element-2 {
+  position: absolute;
+  width: 40px;  /* Reduced width */
+  height: 70px; /* Reduced height */
+  background-color: white;
+  border-radius: 0 40px 40px 0;
+  left: 660px; /* Increased left to keep gap */
+  top: 591px;  /* Align with .new-element-1 */
+  animation: fadeInOut2 1s ease-in-out forwards;
+  opacity: 1;
+}
+.new-element-3{
+  position: absolute;
+  width: 44px;
+  height: 12px;
+  top: 615px;
+  left: 645px; /* Centered between both halves */
+  background-image: url('../source/GradHub\ \(1\).png');
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  z-index: 1; /* Ensures it's partially overlapped */
+  animation: fadeInOut2 1s ease-in-out forwards;
+}
+@keyframes fadeInOut2 {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+
+}
+.grad {
+  position: absolute;
+  width: 303px;
+  top: 583px;
+  left: 489px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: white; /* Default color for "Hub" */
+}
+
+.grad span {
+  color: #00A8FF; /* Blue color for "Grad" */
+}
+
+
+
+
+
