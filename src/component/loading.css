@@ -1,9 +1,10 @@
-.landing-page {
+.lp {
   background-color: #000;
   width: 100vw;
   height: 100vh;
   position: relative;
   overflow: hidden;
+  
 }
 
 .logo {
@@ -37,17 +38,17 @@
 }
 
 @keyframes moveEllipse {
-  0% { top: 379px; left: 712px; }
-  10% { top: 325px; left: 712px; }
-  20% { top: 325px; left: 712px; }
-  30% { top: 319px; left: 652px; }
-  40% { top: 287px; left: 652px; }
-  50% { top: 296px; left: 574px; }
-  60% { top: 340px; left: 522px; }
-  70% { top: 402px; left: 503px; }
-  80% { top: 480px; left: 528px; }
-  90% { top: 510px; left: 574px; }
-  100% { top: 520px; left: 627px; }
+  0% { top: 379px; left: 712px; opacity: 1; }
+  10% { top: 325px; left: 712px; opacity: 1; }
+  20% { top: 319px; left: 652px; opacity: 1; }
+  30% { top: 287px; left: 652px; opacity: 1; }
+  40% { top: 296px; left: 574px; opacity: 1; }
+  50% { top: 340px; left: 522px; opacity: 1; }
+  60% { top: 402px; left: 503px; opacity: 1; }
+  70% { top: 480px; left: 528px; opacity: 1; }
+  80% { top: 510px; left: 574px; opacity: 1; }
+  90% { top: 520px; left: 627px; opacity: 1; }
+  100% { top: 520px; left: 627px; opacity: 0;transition: opacity 2s ease-in-out; }
 }
 
 .new-image {
@@ -69,49 +70,47 @@
   90% { opacity: 1; }
   100% { opacity: 0; }
 }
-/* Remove default styles from .new-element to prevent interference */
-.new-element {
+
+.ne {
   position: absolute;
 }
 
-/* Left-facing semicircle */
-/* Left-facing semicircle */
-/* Left-facing semicircle (smaller size) */
-.new-element-1 {
+
+.ne-1 {
   position: absolute;
-  width: 40px;  /* Reduced width */
-  height: 70px; /* Reduced height */
+  width: 40px; 
+  height: 62px; 
   background-color: white;
   border-radius: 40px 0 0 40px;
-  left: 607.08px; /* Adjust as needed */
-  top: 591px;  /* Adjust as needed */
+  left: 607.08px; 
+  top: 591px; 
   animation: fadeInOut2 1s ease-in-out forwards;
   opacity: 1;
 }
 
-/* Right-facing semicircle (smaller size with gap) */
-.new-element-2 {
+
+.ne-2 {
   position: absolute;
-  width: 40px;  /* Reduced width */
-  height: 70px; /* Reduced height */
+  width: 40px;  
+  height: 62px; 
   background-color: white;
   border-radius: 0 40px 40px 0;
-  left: 660px; /* Increased left to keep gap */
-  top: 591px;  /* Align with .new-element-1 */
+  left: 660px; 
+  top: 591px;  
   animation: fadeInOut2 1s ease-in-out forwards;
   opacity: 1;
 }
-.new-element-3{
+.ne-3{
   position: absolute;
   width: 44px;
   height: 12px;
   top: 615px;
-  left: 645px; /* Centered between both halves */
+  left: 645px;
   background-image: url('../source/GradHub\ \(1\).png');
   background-size: cover;
   background-position: center;
   opacity: 1;
-  z-index: 1; /* Ensures it's partially overlapped */
+  z-index: 1;
   animation: fadeInOut2 1s ease-in-out forwards;
 }
 @keyframes fadeInOut2 {
@@ -131,11 +130,11 @@
   font-size: 70px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: white; /* Default color for "Hub" */
+  color: white; 
 }
 
 .grad span {
-  color: #00A8FF; /* Blue color for "Grad" */
+  color: #00A8FF; 
 }
 
 
